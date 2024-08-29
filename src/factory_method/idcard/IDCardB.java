@@ -2,12 +2,12 @@ package factory_method.idcard;
 
 import factory_method.framework.Product;
 
-// Product 클래스(상위 클래스)의 추상 메서드를 구현한다.
-public class IDCard extends Product {
+// 제품(Product) 구현체
+public class IDCardB extends Product {
 
     private String owner;
 
-    public IDCard(String owner) {
+    public IDCardB(String owner) {
         System.out.println(owner + "의 카드를 만듭니다.");
         this.owner = owner;
     }
@@ -19,7 +19,7 @@ public class IDCard extends Product {
 
     @Override
     public String toString() {
-        return "[IDCard:" + owner + "]";
+        return "[IDCardB:" + owner + "]";
     }
 
     public String getOwner() {
